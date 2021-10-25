@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="https://kit.fontawesome.com/cabc9b3888.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="stylesheet.css" />
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,8 +15,43 @@
             <a href="index.html"
                 ><img class="logo" src="images/logo/logofullsize.png"
             /></a>
+            <form id="form">
+                <input type="search" id="query" name="q" placeholder="Search..">
+                <button><i class="fas fa-search"></i></button>
+            </form>
+            <div class="navigation">
+            <label for="basket"><i class="fas fa-shopping-cart"></i></label>
+            <label for="hamburger-menu"><i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" id="hamburger-menu">
+            <nav class="menu">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Upcoming</a></li>
+                </ul>
+            </nav>
+            <label for="user"><i class="fas fa-user"></i></label>
+            </div>
         </header>
-        <main></main>
-        <footer></footer>
+        <main>
+            <section>
+                <h1>Join The GAME HUB Community</h1>
+                <h2>And Get Your Games Today</h2>
+                <H2>And Resell Them For Good Prices</H2>
+            </section>
+            <section class="container"><H1 class="headline">Games Of the Week</H1></section>
+            <div class="promo one"><img class="gamepromp" src="images/ping.jpg" alt="pingpong"></div>
+            <div class="promo two"><img class="gamepromp" src="images/duper.jpg" alt="pingpong"></div>
+            <div class="promo three"><img class="gamepromp" src="images/black.jpg" alt="pingpong"></div>
+            <div class="promo four"><img class="gamepromp" src="images/furious.jpg" alt="pingpong"></div>
+            <div class="promo five"><img class="gamepromp" src="images/assassin.jpg" alt="pingpong"></div>
+            <div class="promo six"><img class="gamepromp" src="images/cyber.jpg" alt="pingpong"></div>
+        </main>
+        <footer>
+            <div>
+            <h3>Contact us: <a href="mailto:support@gamehub.com">support@gamehub.com</a></h3>
+            </div>
+        </footer>
     </body>
 </html>

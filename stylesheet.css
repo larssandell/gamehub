@@ -1,11 +1,77 @@
 @font-face {
-    font-family: roboto, sans-serif, Verdana, Tahoma, sans-serif;
-    src: url();
+    font-family: "roboto-regular", sans-serif, Verdana, Tahoma, sans-serif;
+    src: url(/font/Roboto-Regular.ttf);
 }
 header {
     background-color: #f2f2f2;
+    display: cover;
+    width: 100%;
 }
 header .logo {
     height: 90 px;
     width: 170px;
+}
+
+/* Body */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2d4459;
+}
+.active {
+    text-decoration: underline;
+}
+
+/* nav */
+
+nav {
+    display: none;
+    text-decoration: none;
+    color: #000000;
+}
+nav li {
+    list-style-type: none;
+    padding-top: 5px;
+}
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+#hamburger-menu {
+    display: none;
+    align: center;
+    font-size: 40px;
+    color: #f27507;
+    background-color: #f2f2f2;
+}
+.menu a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #000000;
+}
+.container {
+    grid-template-columns: 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "div div"
+        "div div"
+        "div div";
+}
+.promo {
+    flex: 1;
+    padding: 5px;
+    margin: 5px;
+}
+.gamepromo {
+    position: relative;
+    width: 50px;
+    height: auto;
+}
+footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+    color: white;
 }

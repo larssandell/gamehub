@@ -9,3 +9,9 @@ Orange: #F27507
 
 Text: Roboto
 Logo Coluna rounded
+
+icons:
+<i class="fas fa-shopping-cart"></i>
+<i class="fas fa-user"></i>
+<i class="fas fa-bars"></i>
+<i class="fas fa-search"></i>
