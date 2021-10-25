@@ -3,5 +3,9 @@
     src: url();
 }
 header {
-    background-color: black;
+    background-color: #f2f2f2;
+}
+header .logo {
+    height: 90 px;
+    width: 170px;
 }
