@@ -67,6 +67,34 @@ nav li {
     width: 50px;
     height: auto;
 }
+form {
+    background-color: white;
+    width: 300px;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+input {
+    all: unset;
+    font: 16px system-ui;
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+::placeholder {
+    color: black;
+    opacity: 0.7;
+}
+button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+
 footer {
     position: relative;
     bottom: 0px;
