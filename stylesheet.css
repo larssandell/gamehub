@@ -22,9 +22,7 @@ body {
 .active {
     text-decoration: underline;
 }
-
 /* nav */
-
 nav {
     display: none;
     text-decoration: none;
@@ -39,7 +37,7 @@ nav li {
 }
 #hamburger-menu {
     display: none;
-    align: center;
+    box-align: center;
     font-size: 40px;
     color: #f27507;
     background-color: #f2f2f2;
@@ -50,15 +48,12 @@ nav li {
     color: #000000;
 }
 .container {
-    grid-template-columns: 50px 50px;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "div div"
-        "div div"
-        "div div";
+    color: #f27507;
 }
 .promo {
-    flex: 1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: tomato;
     padding: 5px;
     margin: 5px;
 }
