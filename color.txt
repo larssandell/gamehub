@@ -1,0 +1,11 @@
+Green: #15922A
+Background: #2D4459
+text white: #FFFFFF
+light Grey: #F2F2F2
+Darkgrey: #707070
+Black: #000000
+Orange: #F27507
+
+
+Text: Roboto
+Logo Coluna rounded
