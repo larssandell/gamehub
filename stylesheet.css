@@ -2,22 +2,46 @@
     font-family: "roboto-regular", sans-serif, Verdana, Tahoma, sans-serif;
     src: url(/font/Roboto-Regular.ttf);
 }
+* {
+    margin: 0;
+    padding: 0;
+}
 header {
     background-color: #f2f2f2;
     display: cover;
     width: 100%;
+    height: fit-content;
+    color: #000000;
 }
 header .logo {
-    height: 90 px;
-    width: 170px;
+    height: 5vh;
+    width: auto;
+    overflow: none;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    float: right;
+    top: -40px;
+}
+#search-bar {
+    display: flex;
+    align-items: center;
+    float: right;
+    height: fit-content;
+    /* overflow: all; */
+    position: absolute;
+    height: fit-content;
+    width: 25vh;
+    top: 10px;
+    right: -10px;
 }
 
 /* Body */
 
 body {
-    margin: 0;
-    padding: 0;
     background-color: #2d4459;
+    color: white;
 }
 .active {
     text-decoration: underline;
@@ -31,6 +55,7 @@ nav {
 nav li {
     list-style-type: none;
     padding-top: 5px;
+    overflow: none;
 }
 #hamburger-menu:checked ~ nav {
     display: block;
@@ -41,25 +66,39 @@ nav li {
     font-size: 40px;
     color: #f27507;
     background-color: #f2f2f2;
+    height: 100px;
+    overflow: none;
+    margin: 0;
 }
 .menu a {
     text-decoration: none;
     font-size: 1.3rem;
     color: #000000;
 }
-.container {
+.headline {
     color: #f27507;
 }
-.promo {
+
+.div-wrapper {
+    display: inline-table;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.containerpromo,
+h2 {
+    font-size: medium;
+}
+/* .promo {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     background-color: tomato;
     padding: 5px;
     margin: 5px;
-}
+} */
 .gamepromo {
     position: relative;
-    width: 50px;
+    width: 20vh;
     height: auto;
 }
 form {
