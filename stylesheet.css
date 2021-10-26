@@ -8,38 +8,76 @@
 }
 /* header */
 header {
+    position: sticky;
     background-color: #f2f2f2;
     display: cover;
     width: 100%;
     height: 7vh;
     color: #000000;
 }
-header .logo {
+.logo {
     height: 5vh;
     width: auto;
+}
+/* .flex-container-header {
+    display: flex;
+    display: inline;
+} */
+#search-bar {
+    float: right;
+    height: fit-content;
+    overflow: all;
+    position: relative;
+    height: 3vh;
+    width: 25vh;
+    right: 90px;
+}
+.navigation .fas {
+    font-size: 25px;
+}
+.navigation .fas:active {
+    color: #f27507;
+}
+.navigation .fas:hover {
+    color: #f27507;
+}
+
+/* navigation */
+
+nav {
+    display: none;
+    text-decoration: none;
+    color: #000000;
+}
+nav ul {
+    /* border: 1px solid rgb(0, 0, 0);
+    background-color: #0000004b; */
     overflow: none;
 }
 .navigation {
+    overflow: visible;
+    float: right;
+    text-align: right;
+}
+.navigation label {
+}
+nav li {
+    list-style-type: none;
     overflow: none;
-    justify-content: space-evenly;
-    align-items: center;
-    float: right;
+    padding-top: 15px;
 }
-
-#search-bar {
-    display: flex;
-    align-items: center;
-    float: right;
-    height: fit-content;
-    /* overflow: all; */
-    position: absolute;
-    height: 3vh;
-    width: 25vh;
-    top: 10px;
-    right: 80px;
+#hamburger-menu:checked ~ nav {
+    display: block;
 }
-.fas {
-    font-size: 30px;
+#hamburger-menu {
+    display: none;
+    overflow: none;
+    margin: 0;
+}
+.menu a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #000000;
 }
 
 /* Body */
@@ -51,72 +89,51 @@ body {
 .active {
     text-decoration: underline;
 }
-/* nav */
 
-nav {
-    display: none;
-    text-decoration: none;
-    color: #000000;
-}
-nav li {
-    list-style-type: none;
-    padding-top: 5px;
-    overflow: none;
-}
-#hamburger-menu:checked ~ nav {
-    display: block;
-}
-#hamburger-menu {
-    position: absolute;
-    display: none;
-    box-align: center;
-    font-size: 40px;
-    color: #f27507;
-    background-color: #f2f2f2;
-    height: 100px;
-    overflow: none;
-    margin: 0;
-}
-.menu a {
-    text-decoration: none;
-    font-size: 1.3rem;
-    color: #000000;
-}
+/* main */
 .headline h1 {
-    color: #f27507;
+    color: #fff;
     text-align: center;
+    top: -40px;
 }
-.headline,
+.headline {
+}
+.container-headline,
 h2 {
     text-align: center;
     font-size: medium;
     color: #fff;
 }
+.headline-promo {
+    color: #f27507;
+    padding: 10px;
+}
+.flex-container {
+    display: flex;
+    margin: 5vh;
+    align-items: center;
+    justify-content: center;
+}
+/* left-content */
+.flex-left {
+    flex: 1;
+}
+/* right-content */
+.flex-right {
+    flex: 1;
+    /* display: inline-table;
+    flex-direction: column;
+    justify-content: space-evenly; */
+}
 
-.div-wrapper {
-    display: inline-table;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-.div-wrapper-2 {
-    display: inline-table;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    right: 50px;
-}
-/* .promo {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    background-color: tomato;
-    padding: 5px;
-    margin: 5px;
-} */
 .gamepromo {
     position: relative;
     width: 20vh;
     height: auto;
+}
+.gamepromo:hover {
+    box-shadow: 0 5px 5px 5px #000000;
+    border: 0.5px #f27507 solid;
 }
 form {
     background-color: white;
@@ -148,7 +165,7 @@ button {
 }
 /* footer */
 footer {
-    position: fixed;
+    position: sticky;
     left: 0;
     right: 0;
     bottom: 0px;
@@ -162,7 +179,15 @@ footer {
 footer a {
     text-decoration: none;
     color: #fff;
+    top: 20px;
 }
 footer a:hover {
     color: #f27507;
+}
+footer div {
+    top: 20px;
+    position: relative;
+}
+
+@media only screen and (max-width: 1200px) {
 }

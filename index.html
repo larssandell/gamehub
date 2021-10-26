@@ -15,10 +15,14 @@
     </head>
     <body>
         <header>
-            <a href="index.html"
+        <div class="flex-container-header">
+            <div id="logo">
+                <a href="index.html"
                 ><img class="logo" src="images/logo/logofullsize.png"
-            /></a>
-            <form id="search-bar">
+                /></a>
+            </div> 
+            <div id="searchbar">   
+             <form id="search-bar">
                 <input
                     type="text"
                     id="search"
@@ -26,7 +30,8 @@
                     placeholder="Search.."
                 />
                 <button><i class="fas fa-search"></i></button>
-            </form>
+             </form>
+            </div>
             <div class="navigation">
                 <label for="user"><i class="fas fa-user"></i></label>
                 <label for="basket"><i class="fas fa-shopping-cart"></i></label>
@@ -36,70 +41,74 @@
                     <ul>
                         <li><a class="active" href="index.html">Home</a></li>
                         <li><a href="#">Games</a></li>
-                        <li><a href="#">Upcoming</a></li>
+                        <li><a href="#">contact</a></li>
                     </ul>
                 </nav>
-
             </div>
+        </div>    
         </header>
         <main>
-            <section>
                 <div class="headline">
                     <h1>Join The GAME HUB Community</h1>
                     <h2>And Get Your Games Today</h2>
                     <h2>And Resell Them For Good Prices</h2>
                 </div>
-            </section>
-            <section class="containerpromo">
+            <div class="container-headline">
                 <h1 class="headline-promo">Games Of the Week</h1>
-            </section>
-            <section class="promotion">
-                <div class="div-wrapper">
+            </div>
+            <section class="flex-container">
+                <div class="flex-left">
                     <div>
+                        <a href="#">
                         <img
                             class="gamepromo"
                             src="images/ping.jpg"
                             alt="pingpong"
-                        />
+                        /></a>
                     </div>
                     <div>
+                        <a href="#">
                         <img
                             class="gamepromo"
                             src="images/duper.jpg"
                             alt="pingpong"
-                        />
+                        /></a>
                     </div>
                     <div>
+                        <a href="#">
                         <img
                             class="gamepromo"
                             src="images/black.jpg"
                             alt="pingpong"
-                        />
+                        /></a>
                     </div>
-            <section class="div-wrapper-2">
+                </div>
+                <div class="flex-right">
                     <div>
+                        <a href="#">
                         <img
                             class="gamepromo"
                             src="images/furious.jpg"
                             alt="pingpong"
-                        />
+                        /></a>
                     </div>
                     <div>
+                        <a href="#">
                         <img
                             class="gamepromo"
                             src="images/assassin.jpg"
                             alt="pingpong"
-                        />
+                        /></a>
                     </div>
                     <div>
+                        <a href="#">
                         <img
                             class="gamepromo"
                             src="images/cyber.jpg"
                             alt="pingpong"
-                        />
+                        /></a>
                     </div>
                 </div>
-            </section>
             </section>
         </main>
         <footer>
