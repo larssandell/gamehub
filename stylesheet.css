@@ -75,8 +75,15 @@ nav li {
     font-size: 1.3rem;
     color: #000000;
 }
-.headline {
+.headline h1 {
     color: #f27507;
+    text-align: center;
+}
+.headline,
+h2 {
+    text-align: center;
+    font-size: medium;
+    color: #fff;
 }
 
 .div-wrapper {
@@ -85,10 +92,7 @@ nav li {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.containerpromo,
-h2 {
-    font-size: medium;
-}
+
 /* .promo {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
