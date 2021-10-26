@@ -6,11 +6,12 @@
     margin: 0;
     padding: 0;
 }
+/* header */
 header {
     background-color: #f2f2f2;
     display: cover;
     width: 100%;
-    height: 6vh;
+    height: 7vh;
     color: #000000;
 }
 header .logo {
@@ -19,11 +20,12 @@ header .logo {
     overflow: none;
 }
 .navigation {
-    display: flex;
+    overflow: none;
+    justify-content: space-evenly;
     align-items: center;
     float: right;
-    top: -40px;
 }
+
 #search-bar {
     display: flex;
     align-items: center;
@@ -34,7 +36,10 @@ header .logo {
     height: 3vh;
     width: 25vh;
     top: 10px;
-    right: 60px;
+    right: 80px;
+}
+.fas {
+    font-size: 30px;
 }
 
 /* Body */
@@ -47,6 +52,7 @@ body {
     text-decoration: underline;
 }
 /* nav */
+
 nav {
     display: none;
     text-decoration: none;
@@ -61,6 +67,7 @@ nav li {
     display: block;
 }
 #hamburger-menu {
+    position: absolute;
     display: none;
     box-align: center;
     font-size: 40px;
@@ -92,7 +99,13 @@ h2 {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-
+.div-wrapper-2 {
+    display: inline-table;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    right: 50px;
+}
 /* .promo {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -117,11 +130,12 @@ form {
 input {
     all: unset;
     font: 16px system-ui;
-    color: white;
+    color: black;
     height: 100%;
     width: 100%;
     padding: 6px 10px;
 }
+
 ::placeholder {
     color: black;
     opacity: 0.7;
@@ -132,12 +146,23 @@ button {
     width: 44px;
     height: 44px;
 }
-
+/* footer */
 footer {
-    position: relative;
+    position: fixed;
+    left: 0;
+    right: 0;
     bottom: 0px;
     width: 100%;
-    height: 100px;
-    background-color: #000000;
+    height: 50px;
+    background-color: #000000d2;
     color: white;
+    text-align: center;
+    font-size: 0.6rem;
+}
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+footer a:hover {
+    color: #f27507;
 }
