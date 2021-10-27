@@ -6,6 +6,27 @@
     margin: 0;
     padding: 0;
 }
+.grid-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.grid-logo {
+    grid-area: 1 / 1 / 2 / 3;
+    justify-self: left;
+}
+.grid-search {
+    grid-area: 1 / 2 / 2 / 3;
+    justify-self: center;
+}
+.grid-menu {
+    grid-area: 1 / 3 / 2 / 4;
+    justify-self: right;
+}
+
 /* header */
 header {
     position: sticky;
@@ -16,21 +37,28 @@ header {
     color: #000000;
 }
 .logo {
-    height: 5vh;
+    height: 7vh;
     width: auto;
+    padding-left: 10px;
 }
-/* .flex-container-header {
-    display: flex;
-    display: inline;
-} */
+.search {
+    color: #000000;
+    margin: 0px;
+}
 #search-bar {
     float: right;
     height: fit-content;
     overflow: all;
     position: relative;
     height: 3vh;
-    width: 25vh;
-    right: 90px;
+    width: 80%;
+    float: left;
+    margin-top: 10px;
+    /* right: 90px; */
+}
+/* icons */
+.fa-search:hover {
+    color: #f27507;
 }
 .navigation .fas {
     font-size: 25px;
@@ -50,11 +78,11 @@ nav {
     color: #000000;
 }
 nav ul {
-    /* border: 1px solid rgb(0, 0, 0);
-    background-color: #0000004b; */
     overflow: none;
 }
 .navigation {
+    margin-right: 10px;
+    margin-top: 5px;
     overflow: visible;
     float: right;
     text-align: right;
@@ -65,6 +93,9 @@ nav li {
     list-style-type: none;
     overflow: none;
     padding-top: 15px;
+    border: 1px black;
+    background-color: #f2f2f2;
+    text-align: center;
 }
 #hamburger-menu:checked ~ nav {
     display: block;
@@ -94,12 +125,13 @@ body {
 .headline h1 {
     color: #fff;
     text-align: center;
-    top: -40px;
 }
 .headline {
+    padding: 50px;
 }
 .container-headline,
 h2 {
+    padding: 5px;
     text-align: center;
     font-size: medium;
     color: #fff;
@@ -110,24 +142,27 @@ h2 {
 }
 .flex-container {
     display: flex;
-    margin: 5vh;
-    align-items: center;
-    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
 }
 /* left-content */
 .flex-left {
+    /* display: flex; */
     flex: 1;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 25px;
 }
 /* right-content */
 .flex-right {
+    /* display: flex; */
     flex: 1;
-    /* display: inline-table;
     flex-direction: column;
-    justify-content: space-evenly; */
+    justify-content: right;
 }
 
 .gamepromo {
-    position: relative;
+    /* position: relative; */
     width: 20vh;
     height: auto;
 }
@@ -137,8 +172,8 @@ h2 {
 }
 form {
     background-color: white;
-    width: 300px;
-    height: 44px;
+    width: 10px;
+    height: 30px;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
