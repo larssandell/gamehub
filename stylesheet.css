@@ -87,8 +87,6 @@ nav ul {
     float: right;
     text-align: right;
 }
-.navigation label {
-}
 nav li {
     list-style-type: none;
     overflow: none;
@@ -110,7 +108,10 @@ nav li {
     font-size: 1.3rem;
     color: #000000;
 }
-
+nav .active {
+    text-decoration: underline;
+    color: #f27507;
+}
 /* Body */
 
 body {
@@ -224,5 +225,26 @@ footer div {
     position: relative;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 800px) {
+    nav li {
+        list-style-type: none;
+        overflow: none;
+        padding-top: 15px;
+        border: 1px black;
+        background-color: #ac0707;
+        text-align: center;
+    }
+    #hamburger-menu:checked ~ nav {
+        display: none;
+    }
+    #hamburger-menu {
+        display: inline-block;
+        overflow: none;
+        margin: 0;
+    }
+    .menu a {
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: #000000;
+    }
 }
