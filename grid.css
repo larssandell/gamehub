@@ -1,0 +1,54 @@
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 10vh 2vh 80vh 4vh;
+
+    grid-template-areas:
+        "he he he he"
+        "me me me me"
+        ". as ma ."
+        "fo fo fo fo";
+}
+
+.contact-menubar {
+    grid-area: me;
+    background: chartreuse;
+}
+.contact-header {
+    grid-area: he;
+    background: black;
+}
+.contact-aside {
+    grid-area: as;
+    background: blue;
+}
+.contact-main {
+    grid-area: ma;
+    background: brown;
+}
+.contact-footer {
+    grid-area: fo;
+    background: burlywood;
+}
+.contact-menubar > a {
+    text-decoration: none;
+}
+
+.p {
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-grid {
+        display: grid;
+
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+        grid-template-rows: 10vh 80vh 4vh;
+
+        grid-template-areas:
+            "he he he he"
+            ". as ma ."
+            "fo fo fo fo";
+    }
+}
