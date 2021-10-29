@@ -24,6 +24,8 @@ body {
 }
 .grid-search {
     grid-area: grid-search;
+    padding-left: 50px;
+    width: 100%;
 }
 .grid-menu {
     grid-area: grid-menu;
@@ -44,29 +46,8 @@ body {
         "five six";
 }
 
-.one {
-    grid-area: one;
-}
-.two {
-    grid-area: two;
-}
-.three {
-    grid-area: three;
-}
-.four {
-    grid-area: four;
-}
-.five {
-    grid-area: five;
-}
-.six {
-    grid-area: six;
-}
-
 .grid-item {
     align-content: center;
-    /* width: fit-content;
-    height: fit-content; */
 }
 
 /* header */
@@ -91,15 +72,11 @@ header {
     margin: 0px;
 }
 #search-bar {
-    /* float: right; */
-    /* height: fit-content; */
-    /* overflow: all; */
     position: relative;
     height: 3vh;
     width: 80%;
     float: left;
     margin-top: 10px;
-    /* right: 90px; */
 }
 
 /* icons */
@@ -193,21 +170,7 @@ h2 {
 }
 .flex-container {
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: colom;
-}
-/* left-content */
-.flex-left {
-    flex: 1;
-    /* flex-direction: column; */
-    justify-content: left;
-    margin-left: 25px;
-}
-/* right-content */
-.flex-right {
-    flex: 1;
-    /* flex-direction: column; */
-    justify-content: right;
 }
 
 .gamecard {
@@ -350,5 +313,13 @@ footer div {
     }
     .footer {
         height: 50px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .grid-search {
+        grid-area: grid-search;
+        padding-left: 20px;
+        width: 100%;
     }
 }
