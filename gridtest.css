@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* header grid */
+.wrapper {
+    display: grid;
+    /* grid-gap: 10px; */
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.box {
+    background-color: #f2f2f2;
+    color: #fff;
+    /* border-radius: 5px; */
+    padding: 20px;
+    font-size: 150%;
+}
+
+.box > div {
+    /* color: #f2f2f2; */
+}
+
+/* header grid right */
+.right {
+    grid-column: 3 / 3;
+    text-align: center;
+    display: inline;
+}
+.left img {
+    display: block;
+    margin: auto;
+    width: auto;
+    height: 15vh;
+}
+/* header grid left */
+.b {
+    grid-column: 1 / 4;
+    /* grid-row: row 1; */
+    display: grid;
+    /* grid-gap: 10px; */
+    grid-template-columns: 1fr;
+    display: inline;
+    justify-content: space-evenly;
+}
+
+.c {
+    grid-column: 2 / 4;
+    /* grid-row: row 1; */
+}
+/* header center grid */
+.center {
+    position: sticky;
+    grid-column: 2 / 3;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.left {
+    grid-column: 1 / 3;
+}
+/* right grid icons */
+.right i {
+    color: black;
+    cursor: crosshair;
+}
+.right i:hover {
+    color: white;
+}
+.i {
+    color: tomato;
+}
+
+/* footer grid */
+
+/* end of header grid */

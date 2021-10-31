@@ -1,3 +1,8 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
 .contact-grid {
     display: grid;
 
@@ -10,7 +15,23 @@
         ". as ma ."
         "fo fo fo fo";
 }
+.center-a {
+    grid-column: 1;
+}
 
+.header-left:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+/* .contact-header:nth-child(2) {
+    background-color: bisque;
+    grid-column-start: span 2;
+} */
+.header-right {
+    grid-row: 3;
+}
 .contact-menubar {
     grid-area: me;
     background: chartreuse;
@@ -18,6 +39,8 @@
 .contact-header {
     grid-area: he;
     background: black;
+    color: azure;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .contact-aside {
     grid-area: as;

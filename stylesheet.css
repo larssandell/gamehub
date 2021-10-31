@@ -177,9 +177,12 @@ h2 {
     width: 20vh;
     height: auto;
 }
-.grid-item:active {
+.grid-item:hover {
     box-shadow: 0 2px 2px 2px #000000b2;
-    border: 0.5px #f27507 solid;
+    border: 0.5px solid #f27507;
+}
+.grid-item:active {
+    border: 1px solid #f27507;
 }
 form {
     background-color: white;
