@@ -9,7 +9,6 @@
 html,
 body {
     height: 100%;
-    margin: 0;
 }
 /* Grid header */
 .grid-header {
@@ -52,7 +51,6 @@ body {
 
 /* header */
 header {
-    position: sticky;
     background-color: #f2f2f2;
     display: cover;
     width: 100%;
