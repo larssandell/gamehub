@@ -387,6 +387,9 @@ footer div {
         box-shadow: 0 5px 5px 5px #00000086;
         border: 2px #f27507 solid;
     }
+    .content-list {
+        margin-top: 10px;
+    }
     /* .menu-large {
         display: inline;
         text-decoration: none; 
@@ -467,18 +470,19 @@ footer div {
     }
     .gamepicture {
         height: 300px;
-        width: auto;
+        padding-left: 0;
     }
     .buy-button {
         height: 3rem;
         padding: 0 1.6rem;
     }
     .game-price {
-        padding-top: 110px;
+        padding-top: 96px;
         padding-bottom: 15px;
     }
     .gamespec {
         padding-right: 1px;
+        border: 1p solid gray;
     }
 }
 
@@ -498,6 +502,11 @@ footer div {
         font-size: 2em;
     }
 }
+@media only screen and (min-width: 901px) {
+    .content-list {
+        min-height: calc(7vh - 45px);
+    }
+}
 
 @media only screen and (max-width: 400px) {
     .grid-header {
@@ -512,6 +521,10 @@ footer div {
         display: none;
     }
     .navigation .fas {
-        font-size: 20px;
+        font-size: 15px;
+    }
+    header .navigation {
+        margin-right: 2px;
+        margin-top: 10px;
     }
 }
