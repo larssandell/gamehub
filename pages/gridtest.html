@@ -12,30 +12,32 @@
         <title>Document</title>
     </head>
     <body>
-        <div class="wrapper">
-            <div class="box a">
-                <div class="left">
-                    <img src="/images/logo/logofullsize-v2.png" />
+        <header></header>
+        <input type="checkbox" id="show" />
+        <label for="show" class="show-button"
+            ><i class="fas fa-user"></i
+        ></label>
+        <div id="login-container">
+            <h1>Login to the hub</h1>
+            <form action="#" method="post">
+                <div class="username">
+                    <label for="user">Username:</label>
+                    <input type="text" name="user" id="user" required />
                 </div>
-            </div>
-            <div class="center">
-                <form id="search-bar">
+                <div class="user-password">
+                    <label for="password">Password:</label>
                     <input
-                        type="text"
-                        id="search"
-                        name="q"
-                        placeholder="Search..."
+                        type="password"
+                        name="password"
+                        id="password"
+                        required
                     />
-                    <button><i class="fas fa-search"></i></button>
-                </form>
-            </div>
-            <div class="right">
-                <div class="box b">
-                    <i class="fas fa-shopping-cart"></i>
-                    <i class="fas fa-user"></i>
-                    <i class="fas fa-bars"></i>
                 </div>
-            </div>
+                <div class="forgot-password">
+                    <a href="">Forgot password?</a>
+                </div>
+                <button class="login-button" type="submit">Log In</button>
+            </form>
         </div>
     </body>
 </html>

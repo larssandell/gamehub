@@ -10,6 +10,9 @@ html,
 body {
     height: 100%;
 }
+header {
+    background-color: #f2f2f2;
+}
 /* Grid header */
 .grid-header {
     display: grid;
@@ -23,8 +26,7 @@ body {
 }
 .grid-search {
     grid-area: grid-search;
-    padding-left: 50px;
-    width: 100%;
+    padding-left: 15%;
 }
 .grid-menu {
     grid-area: grid-menu;
@@ -46,7 +48,7 @@ body {
 }
 
 .grid-item {
-    align-content: center;
+    box-sizing: border-box;
 }
 
 /* header */
@@ -70,10 +72,10 @@ header {
     margin: 0px;
 }
 #search-bar {
+    align-content: center;
     position: relative;
     height: 3vh;
     width: 80%;
-    float: left;
     margin-top: 10px;
 }
 
@@ -89,8 +91,12 @@ header {
 }
 .navigation .fas:hover {
     color: #f27507;
+    cursor: pointer;
 }
-
+/* hyperlinks */
+header a {
+    color: #000;
+}
 /* navigation */
 
 .menu {
@@ -107,6 +113,9 @@ nav ul {
     overflow: visible;
     float: right;
     text-align: right;
+}
+.navigation .fas {
+    margin-right: 10px;
 }
 nav li {
     list-style-type: none;
@@ -131,6 +140,8 @@ nav li {
 }
 nav .active {
     text-decoration: underline;
+}
+a:hover {
     color: #f27507;
 }
 /* Body */
@@ -139,17 +150,13 @@ body {
     background-color: #2d4459;
     color: white;
 }
-.active {
-    text-decoration: underline;
-}
-
 /* main */
 .headline h1 {
     color: #fff;
     text-align: center;
 }
 .headline {
-    padding: 50px;
+    padding: 25px;
 }
 .headline img {
     width: 100px;
@@ -168,17 +175,23 @@ h2 {
 }
 .flex-container {
     display: flex;
-    flex-direction: colom;
+    flex-direction: column;
 }
 
 .gamecard {
+    box-sizing: border-box;
     width: 20vh;
     height: auto;
 }
-.grid-item:hover {
+.gamecard:hover {
+    box-sizing: border-box;
     box-shadow: 0 2px 2px 2px #000000b2;
     border: 0.5px solid #f27507;
 }
+/* .grid-item:hover {
+    box-shadow: 0 2px 2px 2px #000000b2;
+    border: 0.5px solid #f27507;
+} */
 .grid-item:active {
     border: 1px solid #f27507;
 }
@@ -236,11 +249,94 @@ footer div {
     position: relative;
 }
 
+/* gamlist page */
+.gamelist-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    /* float: inline-end; */
+    margin: auto;
+    width: 60%;
+}
+.gamelist-wrapper h1 {
+    color: #f27507;
+    padding-bottom: 5px;
+}
+.gameheadline {
+    border-bottom: 3px solid #f27507;
+    background-color: #000;
+}
+.gameheadline h1 {
+    color: #f27507;
+    text-align: center;
+}
+.gamelist {
+    flex-wrap: wrap;
+    margin-top: 10px;
+    align-self: center;
+    border: 1px solid gray;
+}
+.gameinfo {
+    width: 200px;
+}
+.content-list {
+    min-height: calc(10vh - 45px);
+}
+.gamepicture {
+    height: 200px;
+    padding-left: 20px;
+}
+.gametitle {
+    text-align: center;
+    padding-bottom: 5px;
+}
+.oldprice {
+    color: red;
+    text-decoration: line-through;
+}
+.price {
+    color: #15922a;
+}
+.game-price {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.gamespec {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+.buy-button {
+    background-image: linear-gradient(
+        92.88deg,
+        #15922a 9.16%,
+        #48a457 43.89%,
+        #15922a 64.72%
+    );
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: 20px;
+    font-weight: 500;
+    height: 3rem;
+    text-align: center;
+    transition: all 0.5s;
+    user-select: none;
+}
+.buy-button:hover {
+    box-shadow: rgba(242, 117, 7, 0.658) 0 1px 30px;
+    transition: 0.1s;
+}
 @media only screen and (min-width: 900px) {
     .grid-header {
-        display: grid;
+        align-items: center;
+        background-color: #f2f2f2;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 3vh;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas:
             "grid-logo grid-search grid-menu"
             "inlinemenu inlinemenu inlinemenu";
@@ -249,9 +345,19 @@ footer div {
     .inlinemenu {
         grid-area: inlinemenu;
         background: #f2f2f2;
-        padding-right: 45%;
-        margin-top: -30px;
         word-spacing: 20px;
+    }
+    .inlinemenu {
+        grid-row: 2;
+        grid-column: 2;
+        text-align: center;
+    }
+    .menu-inline li {
+        display: inline;
+    }
+    .menu-inline a {
+        text-decoration: none;
+        font-size: 20px;
     }
     .grid-container {
         grid-template-areas: "one two three four five six";
@@ -261,15 +367,23 @@ footer div {
     }
     .grid-logo {
         position: absolute;
+        display: block;
+        margin: auto;
+    }
+    .logo {
+        width: auto;
+        height: 75px;
     }
     .gamecard {
-        width: 15vh;
+        width: 15vw;
         height: auto;
     }
     .grid-container {
         border: 1px solid #f27507;
+        box-sizing: border-box;
     }
-    .grid-item:hover {
+    .gamecard:hover {
+        box-sizing: border-box;
         box-shadow: 0 5px 5px 5px #00000086;
         border: 2px #f27507 solid;
     }
@@ -277,11 +391,8 @@ footer div {
         display: inline;
         text-decoration: none; 
     } */
-    header {
-        height: 9vh;
-    }
     .menu {
-        display: inline;
+        display: none;
         float: right;
         margin-top: 15px;
     }
@@ -293,7 +404,6 @@ footer div {
     }
     nav .active {
         text-decoration: underline;
-        color: black;
     }
     .navigation .fa-user {
         float: right;
@@ -313,10 +423,13 @@ footer div {
     }
     .headline {
         width: 80%;
-        background-image: url(/images/banner.jpg);
+        background-image: url(/images/garrett-johnson-banner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 25px;
     }
     .headline h1 {
         font-size: 4em;
@@ -324,22 +437,81 @@ footer div {
     .headline h2 {
         font-size: 3em;
     }
-    .gamecard {
-        width: 22vh;
-        height: auto;
-    }
     .content {
         min-height: calc(20vh - 45px);
     }
     .footer {
         height: 50px;
     }
+    /* Gamelist page */
+
+    .gamelist-wrapper {
+        flex-direction: row;
+        justify-content: center;
+        width: 90%;
+        row-gap: 20px;
+        column-gap: 10px;
+    }
+    .gamelist {
+        align-self: center;
+        /* flex-direction: row; */
+        height: 350px;
+        width: 440px;
+        border: 1px solid gray;
+    }
+    .gameheadline {
+        text-align: center;
+    }
+    .gameinfo {
+        float: right;
+    }
+    .gamepicture {
+        height: 300px;
+        width: auto;
+    }
+    .buy-button {
+        height: 3rem;
+        padding: 0 1.6rem;
+    }
+    .game-price {
+        padding-top: 110px;
+        padding-bottom: 15px;
+    }
+    .gamespec {
+        padding-right: 1px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .grid-header {
+        grid-template-areas: "grid-logo grid-search grid-menu";
+    }
+    .inlinemenu {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1190px) {
+    .headline h1 {
+        font-size: 3em;
+    }
+    .headline h2 {
+        font-size: 2em;
+    }
 }
 
 @media only screen and (max-width: 400px) {
+    .grid-header {
+        grid-template-areas: "grid-logo grid-search grid-menu";
+    }
     .grid-search {
         grid-area: grid-search;
         padding-left: 20px;
         width: 100%;
+    }
+    .inlinemenu {
+        display: none;
+    }
+    .navigation .fas {
+        font-size: 20px;
     }
 }

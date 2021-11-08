@@ -1,0 +1,48 @@
+.gamelist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "title title"
+        "img de"
+        "img price"
+        "img buy";
+}
+
+.gamepicture {
+    grid-column: 1;
+    grid-row: 2;
+}
+.description {
+    grid-column: 2;
+    grid-row: 2;
+}
+.game-price {
+    grid-column: 2;
+    grid-row: 3;
+}
+.buy-button {
+    grid-column: 2;
+    grid-row: 4;
+}
+.gametitle {
+    grid-column: 2 / 2;
+    grid-row: 1;
+}
+.gamepicture {
+    grid-area: img;
+}
+.description {
+}
+.game-price {
+    grid-column: 2;
+    grid-row: 3;
+}
+.buy-button {
+    grid-column: 2;
+    grid-row: 4;
+}
+.gametitle {
+    grid-column: 2 / 2;
+    grid-row: 1;
+}

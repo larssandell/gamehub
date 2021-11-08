@@ -40,17 +40,23 @@ body {
 
 /* header grid */
 .left-header {
-    grid-column: 0 / 3;
+    grid-column: 0;
     grid-row: 1;
     place-items: center;
+    padding-top: 20px;
 }
 .center-header {
-    grid-column: 2 / 3;
+    grid-column: 2;
     grid-row: 1;
+    place-content: center;
 }
 .right-header {
-    grid-column: 3 / 3;
+    grid-column: 3;
     grid-row: 1;
+}
+.inlinemenu {
+    grid-column: 2;
+    grid-row: 2;
 }
 .logo-header {
     margin: auto;
@@ -58,13 +64,21 @@ body {
     height: 10vh;
 }
 
-/* flex header */
-/* .header-flex {
+#search-bar {
     display: flex;
-    justify-content: end;
-    align-items: baseline;
-    gap: 10px;
-} */
+    justify-content: center;
+    padding-top: 50px;
+}
+.right-container {
+    /* display: flex;
+    justify-content: flex-end;
+    gap: 10px; */
+    padding-top: 50px;
+    padding-left: 195px;
+}
+.right-container .fas {
+    margin-right: 10px;
+}
 
 /* footer grid */
 .footer-grid {
@@ -81,6 +95,7 @@ body {
     grid-row: 1;
     text-align: center;
     justify-content: center;
+    margin-top: 20px;
 }
 .right-footer {
     grid-area: 3;
@@ -108,3 +123,150 @@ a:hover {
 .right-header .fas {
     font-size: 25px;
 }
+.menu a:hover {
+    color: #f27507;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* popup test*/
+/* login */
+.login-button {
+    position: relative;
+    border: 1px solid #000;
+    width: 208px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    justify-items: center;
+}
+.login-button:hover {
+    box-shadow: 1px 2px 1px rgba(41, 40, 40, 0.719);
+    background: rgb(242, 117, 7);
+    background: linear-gradient(
+        0deg,
+        rgba(242, 117, 7, 1) 24%,
+        rgba(45, 68, 89, 1) 100%
+    );
+    color: #fff;
+}
+
+#login-container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+#login-container input {
+    height: 25px;
+    width: 200px;
+    margin-bottom: 10px;
+    border: 2px solid #000;
+    justify-content: center;
+}
+#login-container label {
+    display: flex;
+    float: inline-start;
+}
+.forgot-password {
+    margin-bottom: 10px;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-logo {
+    display: block;
+    margin-left: 110px;
+    margin-top: 5px;
+    height: 6vh;
+    width: auto;
+}
+
+.fas {
+    cursor: pointer;
+}
+
+.createacc {
+    font-size: 1.5rem;
+}
+/* Navigation menu*/
+.menu {
+    display: none;
+    text-decoration: none;
+    color: #000000;
+}
+nav ul {
+    overflow: auto;
+    display: block;
+    position: absolute;
+    /* padding-top: 20px;
+    margin-left: -110px; */
+    margin: auto;
+}
+.navigation {
+    margin-right: 10px;
+    margin-top: 5px;
+    overflow: visible;
+    float: right;
+    text-align: right;
+}
+nav li {
+    list-style-type: none;
+    /* overflow: auto; */
+    padding-top: 15px;
+    border: 1px black;
+    background-color: #f2f2f2;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+}
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+#hamburger-menu {
+    display: none;
+    margin: 0;
+}
+.menu a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #000000;
+}
+nav .active {
+    text-decoration: underline;
+}
+/* Navigation login */
+#show {
+    display: none;
+}
+#show:checked ~ #login-container {
+    display: block;
+}
+#login-container {
+    display: flex;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    justify-content: space-around;
+    border: 2px solid #000;
+    align-items: center;
+    width: 300px;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.26);
+}
+#exit-login {
+    display: none;
+}
+.exit {
+    float: right;
+    padding-right: 5px;
+}
+#exit-login:checked ~ #show {
+    display: none;
+}
+/* end of navigation */
