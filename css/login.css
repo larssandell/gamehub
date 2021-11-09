@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+#login-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: auto;
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.26);
+    border: 2px solid #000;
+    align-items: center;
+    grid-template-areas:
+        ". lo ."
+        ". hl ."
+        ". us ."
+        ". pa ."
+        ". fpa ."
+        ". btn .";
+}
+/* logo */
+.item-1 {
+    grid-area: lo;
+}
+/* headline */
+.item-2 {
+    grid-area: hl;
+    text-align: center;
+}
+/* username */
+.item-3 {
+    grid-area: us;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/* password */
+.item-4 {
+    grid-area: pa;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/* forgot password */
+.item-5 {
+    grid-area: fpa;
+}
+/* login btn */
+.item-6 {
+    grid-area: btn;
+    text-align: center;
+}
+.site-logo {
+    width: 100px;
+    height: auto;
+}
+
+/* login */
+#login-grid text {
+    text-align: center;
+    margin-bottom: 10px;
+}
+#login-grid input {
+    height: 25px;
+    width: 100%fit-content;
+    margin-bottom: 10px;
+    border: 2px solid #000;
+    background-color: #fff;
+}
+#login-grid label {
+    display: flex;
+    float: inline-start;
+}
+.item-5 {
+    text-align: center;
+}
