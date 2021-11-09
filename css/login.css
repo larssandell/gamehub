@@ -23,11 +23,15 @@ body {
 /* logo */
 .item-1 {
     grid-area: lo;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 /* headline */
 .item-2 {
     grid-area: hl;
     text-align: center;
+    padding-bottom: 10px;
 }
 /* username */
 .item-3 {
@@ -46,6 +50,15 @@ body {
 /* forgot password */
 .item-5 {
     grid-area: fpa;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.item-5 a {
+    text-decoration: underline;
+    color: #000;
+}
+.item-5 a:hover {
+    color: #f27507;
 }
 /* login btn */
 .item-6 {
@@ -63,16 +76,55 @@ body {
     margin-bottom: 10px;
 }
 #login-grid input {
-    height: 25px;
-    width: 100%fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20px;
+    max-width: 70%;
     margin-bottom: 10px;
     border: 2px solid #000;
     background-color: #fff;
 }
 #login-grid label {
-    display: flex;
-    float: inline-start;
+    /* display: flex;
+    float: inline-start; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-.item-5 {
+/* button login and hyperlinks */
+.login-btn {
+    background-image: linear-gradient(
+        92.88deg,
+        #15922a 9.16%,
+        #48a457 43.89%,
+        #15922a 64.72%
+    );
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: 20px;
+    font-weight: 500;
+    height: 3rem;
     text-align: center;
+    transition: all 0.5s;
+    user-select: none;
+    width: 150px;
+}
+.login-btn:hover {
+    box-shadow: rgba(242, 117, 7, 0.658) 0 1px 30px;
+    transition: 0.1s;
+}
+/* media login page */
+@media only screen and (min-width: 600px) {
+    #login-grid input {
+        max-width: 50%;
+    }
+}
+@media only screen and (min-width: 900px) {
+    #login-grid input {
+        max-width: 30%;
+    }
 }
