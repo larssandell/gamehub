@@ -4,7 +4,84 @@
 /* @media only screen and (min-width: 900px) {
 }
 */
+
 #gamegrid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    column-gap: 2px;
+    row-gap: 5px;
+    grid-template-areas:
+        "ti ti ti"
+        "pi sp sp"
+        "pi sp sp"
+        "tag btn ."
+        "sh sh sh";
+}
+.promo-picture {
+    width: 200px;
+    height: auto;
+}
+.screen {
+    width: 150px;
+    height: auto;
+}
+.title {
+    grid-area: ti;
+    text-align: center;
+}
+.title h1 {
+    color: #f27507;
+    font-size: 35px;
+}
+.picture {
+    grid-area: pi;
+}
+.specification {
+    grid-area: sp;
+}
+.price-tag {
+    grid-area: tag;
+    margin: auto;
+}
+.buy-btn {
+    grid-area: btn;
+}
+.screenshots {
+    grid-area: sh;
+}
+.big-txt {
+    display: none;
+}
+.screen-container {
+}
+/* button game */
+.buy-btn {
+    background-image: linear-gradient(
+        92.88deg,
+        #15922a 9.16%,
+        #48a457 43.89%,
+        #15922a 64.72%
+    );
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: 20px;
+    font-weight: 500;
+    height: 3rem;
+    text-align: center;
+    transition: all 0.5s;
+    user-select: none;
+    width: 120px;
+}
+.buy-btn:hover {
+    box-shadow: rgba(242, 117, 7, 0.658) 0 1px 30px;
+    transition: 0.1s;
+}
+/* old */
+/* #gamegrid {
     display: grid;
     grid-template-columns: 50px auto auto 50px;
     grid-template-rows: auto;
@@ -96,4 +173,4 @@
     box-sizing: border-box;
     box-shadow: 0 2px 2px 2px #000000b2;
     border: 0.5px solid #f27507;
-}
+} */

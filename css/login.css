@@ -9,6 +9,7 @@ body {
     grid-template-columns: 50px 1fr 50px;
     grid-template-rows: auto;
     margin-top: 40px;
+    margin-bottom: 77px;
     background-color: rgba(255, 255, 255, 0.26);
     border: 2px solid #000;
     align-items: center;
@@ -26,6 +27,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 10px;
 }
 /* headline */
 .item-2 {
@@ -64,6 +66,7 @@ body {
 .item-6 {
     grid-area: btn;
     text-align: center;
+    margin-bottom: 10px;
 }
 .site-logo {
     width: 100px;
@@ -119,12 +122,22 @@ body {
 }
 /* media login page */
 @media only screen and (min-width: 600px) {
+    #login-grid {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
     #login-grid input {
         max-width: 50%;
     }
 }
+@media only screen and (min-width: 700px) {
+    #login-grid {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
 @media only screen and (min-width: 900px) {
     #login-grid input {
-        max-width: 30%;
+        max-width: 50%;
     }
 }
