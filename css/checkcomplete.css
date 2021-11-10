@@ -1,41 +1,94 @@
-.complete {
-    /* padding-top: 50px; */
-    /* display: block;
+.check-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    width: 50%; */
+    text-align: center;
+    grid-template-areas:
+        ". check ."
+        ". info ."
+        ". info ."
+        ". rece ."
+        ". down .";
 }
-.complete .fas {
+.check {
+    grid-area: check;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.fa-check {
     font-size: 60px;
     color: #f27507;
+    margin: auto;
+}
+.download .fas {
+    font-size: 25px;
+    padding-top: 5px;
+}
+.receipt .fas {
+    font-size: 25px;
+    padding-top: 5px;
+}
+.info {
+    grid-area: info;
+}
+.info h1 {
+    color: #f27507;
+}
+.download {
+    grid-area: down;
+}
+.receipt {
+    grid-area: rece;
 }
 .circle-base {
-    border: 5px solid gray;
+    border: 5px solid #3fa535;
     border-radius: 1000px;
     height: 100px;
     width: 100px;
-    margin-top: 100px;
+    display: flex;
+    animation: border-pulse 3s;
+}
+/* hyperlinks checkout complete */
+a {
+    color: #fff;
 }
 /* animation */
-.complete .fas {
+.circle-base .fas {
     animation-name: bounce;
-    animation-duration: 2s;
+    animation-duration: 3s;
     position: relative;
-    top: 100px;
+    top: 0px;
     color: #3fa535;
 }
 
 @keyframes bounce {
     0% {
-        top: 100px;
-        color: #3fa535;
+        top: 0px;
+        color: gray;
     }
     50% {
         color: #f27507;
-        top: 0px;
+        top: -80px;
     }
     100% {
         color: #3fa535;
-        top: 100px;
+        top: 0px;
+    }
+}
+@keyframes border-pulse {
+    0% {
+        border-color: gray;
+    }
+    50% {
+        border-color: #f27507;
+    }
+    100% {
+        border-color: #3fa535;
     }
 }
