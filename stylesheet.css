@@ -241,9 +241,17 @@ footer a {
 footer a:hover {
     color: #f27507;
 }
-footer div {
+.footer-info {
     top: 20px;
     position: relative;
+}
+footer img {
+    width: 65px;
+    height: auto;
+}
+.footer-logo {
+    display: flex;
+    float: left;
 }
 
 /* gamlist page */
