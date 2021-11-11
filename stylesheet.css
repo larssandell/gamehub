@@ -12,6 +12,9 @@ body {
 }
 header {
     background-color: #f2f2f2;
+    width: 100%;
+    height: 7vh;
+    color: #000000;
 }
 /* index */
 
@@ -54,13 +57,6 @@ header {
 }
 
 /* header */
-header {
-    background-color: #f2f2f2;
-    display: cover;
-    width: 100%;
-    height: 7vh;
-    color: #000000;
-}
 .grid-menu-large {
     display: none;
 }
@@ -106,7 +102,7 @@ header a {
     color: #000000;
 }
 nav ul {
-    overflow: none;
+    overflow: overlay;
 }
 .navigation {
     margin-right: 10px;
@@ -336,6 +332,9 @@ footer div {
 /* @Media */
 
 @media only screen and (min-width: 900px) {
+    header {
+        height: auto;
+    }
     .grid-header {
         align-items: center;
         background-color: #f2f2f2;
@@ -375,8 +374,8 @@ footer div {
         margin: auto;
     }
     .logo {
-        width: auto;
-        height: 75px;
+        width: 170px;
+        height: auto;
     }
     .gamecard {
         width: 15vw;
@@ -618,12 +617,15 @@ footer div {
     .inlinemenu {
         display: none;
     }
-    .navigation .fas {
-        font-size: 15px;
-    }
     header .navigation {
         margin-right: 2px;
         margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 437px) {
+    .navigation .fas {
+        font-size: 15px;
+        margin-right: 0;
     }
 }
 @media only screen and (min-width: 600px) {
