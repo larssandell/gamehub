@@ -13,8 +13,8 @@
     row-gap: 5px;
     grid-template-areas:
         "ti ti ti"
-        "pi sp sp"
-        "pi sp sp"
+        "pi sps ."
+        "pi sps ."
         "tag btn ."
         "sh sh sh";
 }
@@ -25,6 +25,7 @@
 .screen {
     width: 150px;
     height: auto;
+    padding-bottom: 10px;
 }
 .title {
     grid-area: ti;
@@ -37,8 +38,12 @@
 .picture {
     grid-area: pi;
 }
-.specification {
-    grid-area: sp;
+.specification-small {
+    grid-area: sps;
+}
+.specification-big {
+    grid-area: spb;
+    display: none;
 }
 .price-tag {
     grid-area: tag;
@@ -50,10 +55,13 @@
 .screenshots {
     grid-area: sh;
 }
-.big-txt {
+/* .fulltext {
     display: none;
-}
+} */
 .screen-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 /* button game */
 .buy-btn {
@@ -70,107 +78,41 @@
     flex-shrink: 0;
     font-size: 20px;
     font-weight: 500;
-    height: 3rem;
+    height: 2rem;
     text-align: center;
     transition: all 0.5s;
     user-select: none;
     width: 120px;
+    padding-top: 4px;
 }
 .buy-btn:hover {
     box-shadow: rgba(242, 117, 7, 0.658) 0 1px 30px;
     transition: 0.1s;
 }
-/* old */
-/* #gamegrid {
-    display: grid;
-    grid-template-columns: 50px auto auto 50px;
-    grid-template-rows: auto;
-    justify-content: center;
-}
-.title {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row: 0;
+.buy-btn button {
     text-align: center;
 }
-.picture {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    display: flex;
-    justify-content: center;
+/* media game page*/
+@media only screen and (min-width: 900px) {
+    #gamegrid {
+        display: grid;
+        grid-template-areas:
+            "ti ti ti"
+            "pi spb ."
+            "pi spb ."
+            "tag btn ."
+            "sh sh sh";
+    }
+    .specification-big {
+        display: inline-block;
+    }
+    .specification-small {
+        display: none;
+    }
 }
-.specification {
-    grid-column: 2;
-    grid-row: 4;
+@media only screen and (min-width: 1260px) {
+    #gamegrid {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
 }
-.price-tag {
-    grid-column: 3;
-    grid-row: 5;
-    text-align: right;
-    padding-top: 15px;
-    padding-right: 5px;
-}
-.buy-btn {
-    grid-column: 2;
-    grid-row: 5;
-}
-.screenshots {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row: 4;
-}
-
-.game-container {
-    display: flex;
-    justify-content: center;
-}
-.game-wrapper {
-    display: flex;
-    justify-content: center;
-}
-.promo-picture {
-    height: 300px;
-}
-.buy-button {
-    height: 3rem;
-    padding: 0 1.6rem;
-}
-.buy-btn {
-    background-image: linear-gradient(
-        92.88deg,
-        #15922a 9.16%,
-        #48a457 43.89%,
-        #15922a 64.72%
-    );
-    border-radius: 8px;
-    border-style: none;
-    box-sizing: border-box;
-    cursor: pointer;
-    flex-shrink: 0;
-    font-size: 20px;
-    font-weight: 500;
-    height: 3rem;
-    text-align: center;
-    transition: all 0.5s;
-    user-select: none;
-    width: 150px;
-}
-.buy-btn:hover {
-    box-shadow: rgba(242, 117, 7, 0.658) 0 1px 30px;
-    transition: 0.1s;
-}
-.screen-container {
-    display: flex;
-    justify-content: space-between;
-}
-.screenshots img {
-    height: 180px;
-    width: auto;
-}
-.screen:hover {
-    box-sizing: border-box;
-    box-shadow: 0 2px 2px 2px #000000b2;
-    border: 0.5px solid #f27507;
-} */
