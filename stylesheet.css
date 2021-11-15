@@ -471,8 +471,8 @@ footer img {
     .gamelist {
         align-self: center;
         /* flex-direction: row; */
-        height: 350px;
-        width: 440px;
+        height: 360px;
+        width: 450px;
         border: 1px solid gray;
     }
     .gameheadline {
@@ -489,7 +489,7 @@ footer img {
         height: 3rem;
     }
     .game-price {
-        padding-top: 96px;
+        padding-top: 75px;
         padding-bottom: 15px;
     }
     .gamespec {
