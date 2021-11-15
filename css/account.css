@@ -1,0 +1,136 @@
+.account-container {
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+.account-container h3 {
+    text-align: center;
+    color: #f27507;
+    margin-bottom: 5px;
+}
+.account-container button {
+    justify-content: center;
+}
+.account-container label,
+input {
+    display: block;
+    width: auto;
+    justify-content: center;
+}
+.account-container input {
+    margin-bottom: 5px;
+}
+.account-container a {
+    text-decoration: none;
+    color: #fff;
+}
+.account-container form {
+}
+.column-one {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 2px solid gray;
+}
+.column-two {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 2px solid gray;
+}
+.shipping {
+    display: grid;
+    justify-content: center;
+}
+.account {
+    display: grid;
+    justify-content: center;
+}
+
+/* button account */
+.save {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+.save-btn {
+    /* text-align: center; */
+}
+.save-btn {
+    background-image: linear-gradient(
+        92.88deg,
+        #15922a 9.16%,
+        #48a457 43.89%,
+        #15922a 64.72%
+    );
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: 20px;
+    font-weight: 500;
+    height: 2rem;
+    width: 100px;
+    text-align: center;
+    transition: all 0.5s;
+    user-select: none;
+}
+.save-btn:hover {
+    box-shadow: rgba(242, 117, 7, 0.658) 0 1px 30px;
+    transition: 0.1s;
+}
+/* media account */
+@media only screen and (min-width: 700px) {
+    .account-container {
+        margin: auto;
+        width: 4;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    .column-one {
+        width: 400px;
+        height: 420px;
+        margin-right: 10px;
+    }
+    .column-two {
+        width: 400px;
+        height: 420px;
+        margin-top: 0;
+    }
+    .account {
+        display: grid;
+        justify-content: center;
+        grid-template-rows: auto auto 42px 42px;
+        height: 400px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .account-container {
+        width: 50%;
+        justify-content: space-between;
+    }
+    .account-container input {
+        height: 25px;
+    }
+
+    .save .two {
+        grid-row: 5;
+        grid-column: 0;
+    }
+    /* .column-two .save {
+        padding-top: 42px;
+    } */
+
+    .shipping {
+        height: 400px;
+    }
+    .account {
+        height: 400px;
+        /* margin-top: 10px; */
+    }
+}

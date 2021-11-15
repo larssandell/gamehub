@@ -13,13 +13,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Buy sell games good price" />
         <meta name="keywords" content="buy, sell, games, cheep" />
-        <title>GAME HUB - The Universe Of Games</title>
+        <title>GAME HUB - Login</title>
     </head>
     <body>
         <header>
             <div class="grid-header">
                 <div class="grid-logo">
-                    <a href="#">
+                    <a href="/index.html">
                         <img
                             class="logo"
                             src="../images/logo/logofullsize-v2.png"
@@ -40,10 +40,10 @@
                 </div>
                 <div class="grid-menu">
                     <div class="navigation">
-                        <label for="user"><i class="fas fa-user"></i></label>
+                        <label for="user"><a href="login.html"><i class="fas fa-user"></i></a></label>
                         <label for="basket"
-                            ><i class="fas fa-shopping-cart"></i
-                        ></label>
+                            ><a href="checkout.html"><i class="fas fa-shopping-cart"></i
+                        ></a></label>
                         <label for="hamburger-menu"
                             ><i class="fas fa-bars"></i>
                         </label>
@@ -51,10 +51,10 @@
                         <nav class="menu">
                             <ul>
                                 <li>
-                                    <a class="active" href="index.html">Home</a>
+                                    <a href="index.html">Home</a>
                                 </li>
-                                <li><a href="#">Games</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="/pages/gamelist.html">Games</a></li>
+                                <li><a href="/pages/contact.html">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -63,10 +63,10 @@
                     <nav class="menu-inline">
                         <ul>
                             <li>
-                                <a class="active" href="index.html">Home</a>
+                                <a href="/index.html">Home</a>
                             </li>
-                            <li><a href="#">Games</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="/pages/gamelist.html">Games</a></li>
+                            <li><a href="/pages/contact.html">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -82,6 +82,7 @@
                     />
                 </div>
                 <div class="item-2"><h1>Login Register</h1></div>
+                <form class="login-form"> 
                 <div class="item-3">
                     <label for="email">Username: </label>
                     <input type="text" id="email" name="username" required></input>
@@ -91,7 +92,7 @@
                     <input type="password" id="password" name="password" required></input>
                 </div>
                 <div class="item-5"><a href="#">Forgotten password?</a></div>
-                <div class="item-6"><button class="login-btn">Login/Register</button> </div>
+                <div class="item-6"><a href="account.html"><button type="submit" class="login-btn">Login/Register</button></a></div></form>
             </div>
             <div class="content"></div>
         </main>

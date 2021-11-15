@@ -1,0 +1,118 @@
+.top-headline {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.637);
+    text-align: center;
+}
+.top-headline h1,
+h2 {
+    color: #f27507;
+}
+.content-contact {
+    margin-top: 5px;
+    border: 2px solid gray;
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "ship ship ship"
+        "ret ret ret"
+        "ing ing ing"
+        ". lus .";
+}
+.content-contact p {
+    margin-bottom: 2px;
+}
+.shipment {
+    grid-area: ship;
+    border-bottom: 2px solid gray;
+    margin-bottom: 5px;
+}
+.return {
+    grid-area: ret;
+    border-bottom: 2px solid gray;
+    margin-bottom: 5px;
+}
+.accounting {
+    grid-area: ing;
+    border-bottom: 2px solid gray;
+    margin-bottom: 5px;
+}
+.mailus {
+    grid-area: lus;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+/* mail button and ikon */
+.mail-button {
+    background-image: linear-gradient(
+        92.88deg,
+        #15922a 9.16%,
+        #48a457 43.89%,
+        #15922a 64.72%
+    );
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: 20px;
+    font-weight: 500;
+    height: 2rem;
+    width: 100px;
+    text-align: center;
+    transition: all 0.5s;
+    user-select: none;
+}
+.mail-button:hover {
+    box-shadow: rgba(242, 117, 7, 0.658) 0 1px 30px;
+    transition: 0.1s;
+}
+.mailus .fas {
+    /* color: #f27507; */
+    font-size: 25px;
+}
+.mailus a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* media contact */
+@media only screen and (min-width: 500px) {
+    .content-contact {
+        margin-top: 10px;
+        border: 0;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 300px auto;
+        grid-template-areas:
+            "ship ret ing"
+            ". lus .";
+    }
+    .content-contact > div {
+        border: 2px solid gray;
+        margin-left: 10px;
+        height: fit-content;
+        margin-bottom: 20px;
+    }
+    .content-contact p {
+        margin-left: 5px;
+    }
+    .mailus {
+        margin-top: 50px;
+    }
+    .mailus .fas {
+        font-size: 35px;
+    }
+}
+@media only screen and (min-width: 650px) {
+    .mailus {
+        margin-top: 10px;
+    }
+}

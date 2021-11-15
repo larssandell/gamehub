@@ -13,13 +13,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Buy sell games good price" />
         <meta name="keywords" content="buy, sell, games, cheep" />
-        <title>GAME HUB - The Universe Of Games</title>
+        <title>GAME HUB - Account</title>
     </head>
     <body>
         <header>
             <div class="grid-header">
                 <div class="grid-logo">
-                    <a href="#">
+                    <a href="/index.html">
                         <img
                             class="logo"
                             src="../images/logo/logofullsize-v2.png"
@@ -40,10 +40,10 @@
                 </div>
                 <div class="grid-menu">
                     <div class="navigation">
-                        <label for="user"><i class="fas fa-user"></i></label>
+                        <label for="user"><a href="login.html"><i class="fas fa-user"></i></a></label>
                         <label for="basket"
-                            ><i class="fas fa-shopping-cart"></i
-                        ></label>
+                            ><a href="checkout.html"><i class="fas fa-shopping-cart"></i
+                        ></a></label>
                         <label for="hamburger-menu"
                             ><i class="fas fa-bars"></i>
                         </label>
@@ -77,6 +77,94 @@
             </div>
         </header>
         <main>
+            <div class="account-container">
+                <div class="column-one">
+                    <div class="shipping">
+                        <h3>Shipping information</h3>
+                        <form class="ship">
+                        <label for="adr">Address:</label>
+                        <input
+                            type="text"
+                            id="adr"
+                            name="address"
+                            placeholder="veien 1"
+                        />
+                        <label for="country">Country:</label>
+                        <input
+                            type="text"
+                            id="country"
+                            name="ctry"
+                            placeholder="Norway"
+                        />
+                        <label for="state">State/Province</label>
+                        <input
+                            type="text"
+                            id="state"
+                            name="state"
+                            placeholder="Agder"
+                        />
+                        <label for="city">City:</label>
+                        <input
+                            type="text"
+                            id="city"
+                            name="city"
+                            placeholder="Kristiansand"
+                        />
+                        <label for="zip">Zipcode:</label>
+                        <input
+                            type="text"
+                            id="zip"
+                            name="zipcode"
+                            placeholder="4633"
+                        />
+                        <div class="save">
+                            <a href="#"
+                                ><button class="save-btn">Save</button></a
+                            >
+                        </div>
+                        </form>
+                    </div>
+                </div>
+                    <div class="column-two">
+                        <div class="account">
+                            <h3>Account information</h3>
+                            <form class="acco">
+                            <label for="name">Name:</label>
+                            <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Ola"
+                            />
+                            <label for="surname">Surname:</label>
+                            <input
+                            type="text"
+                            id="surname"
+                            name="sur"
+                            placeholder="Normann"
+                            />
+                            <label for="name">E-mail</label>
+                            <input
+                            type="text"
+                            id="email"
+                            name="email"
+                            placeholder="olanormann@no.no"
+                            />
+                            <label for="bank">Bank account</label>
+                            <input
+                            type="text"
+                            id="bank"
+                            name="account"
+                            placeholder="(Optional) for selling games"
+                            />
+                        </form>
+                        <div class="save">
+                            <a href="#"
+                                ><button class="save-btn">Save</button></a
+                            >
+                        </div>
+                    </div>
+                </div>
             <div class="content"></div>
         </main>
         <footer class="footer">

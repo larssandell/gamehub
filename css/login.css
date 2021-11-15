@@ -17,9 +17,9 @@ body {
         ". lo ."
         ". hl ."
         ". us ."
-        ". pa ."
-        ". fpa ."
-        ". btn .";
+        ". lof ."
+        ". lof ."
+        ". lof .";
 }
 /* logo */
 .item-1 {
@@ -61,6 +61,9 @@ body {
 }
 .item-5 a:hover {
     color: #f27507;
+}
+.login-form {
+    grid-area: lof;
 }
 /* login btn */
 .item-6 {
@@ -119,6 +122,10 @@ body {
 .login-btn:hover {
     box-shadow: rgba(242, 117, 7, 0.658) 0 1px 30px;
     transition: 0.1s;
+}
+.item-6 a {
+    text-decoration: none;
+    color: #fff;
 }
 /* media login page */
 @media only screen and (min-width: 600px) {

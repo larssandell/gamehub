@@ -92,3 +92,35 @@ a {
         border-color: #3fa535;
     }
 }
+
+@media only screen and (min-width: 1100px) {
+    .fa-check {
+        font-size: 100px;
+    }
+    .circle-base {
+        height: 200px;
+        width: 200px;
+        animation: border-pulse 2s;
+    }
+    .circle-base .fas {
+        animation-duration: 2s;
+    }
+
+    @keyframes bounce {
+        0% {
+            top: 0px;
+            color: gray;
+        }
+        50% {
+            color: #f27507;
+            top: -150px;
+        }
+        100% {
+            color: #3fa535;
+            top: 0px;
+        }
+    }
+    .check-grid {
+        padding-top: 100px;
+    }
+}
