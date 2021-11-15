@@ -85,6 +85,11 @@ h2 {
 }
 
 /* media contact */
+@media only screen and (min-width: 450px) {
+    .mailus {
+        margin-top: 150px;
+    }
+}
 @media only screen and (min-width: 500px) {
     .content-contact {
         margin-top: 10px;
@@ -104,9 +109,7 @@ h2 {
     .content-contact p {
         margin-left: 5px;
     }
-    .mailus {
-        margin-top: 50px;
-    }
+
     .mailus .fas {
         font-size: 35px;
     }
