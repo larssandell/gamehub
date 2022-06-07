@@ -1,6 +1,6 @@
 # GameHub
 
-![image](https://github.com/larssandell/museum/blob/main/museum.png)
+![image](https://github.com/larssandell/gamehub/blob/main/gamehub.png)
 
 ## Description
 
@@ -10,10 +10,9 @@ Using only CSS and HTML.
 
 Pages that it includes:
 - Home page
-- About page
-- Exhibitions
-- Events
-- Exhibition spesific
+- Contact page
+- List of games
+- Game spesific
 
 ### HTML and CSS
 
@@ -26,7 +25,6 @@ Pages that it includes:
 - Color schemes
 - CSS with DRY principle
 - WCAG principles
-- 
 
 ### Design tools
 - Figma
