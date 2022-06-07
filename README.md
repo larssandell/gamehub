@@ -8,7 +8,7 @@ For this school project i was tasked to design and create a homepage for GameHub
 Using only CSS and HTML. And deployd with Netlify
 
 
-Pages that it includes:
+### Pages that it includes:
 - Home page
 - Contact page
 - List of games
