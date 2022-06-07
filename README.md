@@ -5,7 +5,7 @@
 ## Description
 
 For this school project i was tasked to design and create a homepage for GameHub a site for buying and selling games.
-Using only CSS and HTML.
+Using only CSS and HTML. And deployd with Netlify
 
 
 Pages that it includes:
@@ -13,6 +13,7 @@ Pages that it includes:
 - Contact page
 - List of games
 - Game spesific
+- Checkout page
 
 ### HTML and CSS
 
