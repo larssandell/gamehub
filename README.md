@@ -5,7 +5,7 @@
 ## Description
 
 For this school project I was tasked to design and create a homepage for GameHub a site for buying and selling games. 
-Using only CSS and HTML. And deployed with Netlify 
+Using only CSS and HTML. And deployed with Netlify.
 
 
 ### Pages that it includes:
